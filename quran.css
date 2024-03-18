@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    background: #222222;
+}
+.logo{
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo a{
+    font-size: 50px;
+    color: #fff;
+    transition: 0.5s ease ;
+}
+
+.logo a:hover{
+    color: darkblue;
+    font-size: 55px;
+}
+
+.sec {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    
+}
+
+
+
+
+p{
+    display: flex;
+justify-content: center;
+color: #fff;
+font-size: 30px;
+
+}
+
+
+.searsh{
+    margin: 15px;
+    border: solid 5px;
+    border-radius: 50px;
+    padding: 10px;
+    display: flex;
+
+}
+
+.searsh a{
+    color: #fff;
+    margin-right: 7px;
+}
+
+.searsh input{
+    width: 100%;
+    border: none;
+    margin: 0px 10px;
+    color: white;
+    font-size: 20px;
+    outline: none;
+    
+}
+
+
+
+.searsh input:hover{
+    border: hidden;
+}
+
+.cards{
+
+    display: flex;
+    justify-content: center;
+}
+
+.caard{
+    margin: 20px;
+    padding: 15px;
+    width: fit-content;
+    transition: ease 0.5s;
+}
+
+.caard:hover{
+transform: scale(1.1);
+border: solid;
+}
+
+.caard div{
+    display: flex;
+    justify-content: center;
+
+}
+
+img{
+    height: 200px;
+}
+
+.content{
+    color: #fff;
+    font-size: 20px;
+    margin: 20px 30px; 
+}
+
+.btn{
+    border: solid;
+    border-radius: 15px;
+    padding: 10px;
+
+}
+
+.btn a{
+    transition: ease 0.5s;
+}
+
+
+.btn a:hover{
+    color: #fff;
+    transform: scale(1.1);
+}
+
