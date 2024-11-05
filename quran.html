@@ -1,108 +1,220 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Quran Karem</title>
+    <link rel="icon" href="logo.png">
     <link rel="stylesheet" href="quran.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-
-
-    
 </head>
 
 <body>
+    <div class="support">
+        <i class="fa-solid fa-wallet"></i>
+        <p>ادعمنا ماديا</p>
+        <a class="insta" href="https://ipn.eg/S/mohammedelsayd/instapay/8ksAyP" target="_blank">INSTA PAY</a>
+        <a class="cash"href="01067110367" target="_blank">VF CASH</a>
+    </div>
     <header class="head">
         <div class="logo"><a href="#">Quran Karem</a></div>
     </header>
-    
 
-    
-    <!-- <div class="searsh">
-        <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
-        <input  type="search" placeholder="search" class="search-inbut" 
-        onkeyup="search()">
+    <!-- إضافة محرك البحث -->
+    <div class="search" >
+        <input class="ss" type="search" placeholder="ادخل اسم القارئ" id="searchInput" onkeyup="searchProducts()">
+        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
     </div>
-    -->
+
     <p>المصحف كامل بأصوات</p>
 
+    <section class="sec">
+        <div class="cards"></div>
 
+        <!-- البطاقات -->
+        <div class="caard">
+            <div class="img"><img src="eslam.jpg" alt=""></div>
+            <div class="content"><p class="namein">اسلام صبحي</p></div>
+            <div class="btn"><a download="" target="_blank" href="eslam.zip">Download</a></div>
+        </div>
 
+        <div class="caard">
+            <div class="img"><img src="abdelrhman.jpg" alt=""></div>
+            <div class="content"><p class="namein">عبدالرحمن مسعد</p></div>
+            <div class="btn"><a download="" target="_blank" href="abdelrhman.zip">Download</a></div>
+        </div>
 
-<section class="sec">
+        <div class="caard">
+            <div class="img"><img src="الحصري.jpg" alt=""></div>
+            <div class="content"><p class="namein">محمود خليل الحصري</p></div>
+            <div class="btn"><a download="" target="_blank" href="الحصري.zip">Download</a></div>
+        </div>
 
-    
+        <div class="caard">
+            <div class="img"><img src="محمد رفعت.jpg" alt=""></div>
+            <div class="content"><p class="namein">محمد رفعت</p></div>
+            <div class="btn"><a download="" target="_blank" href="محمد رفعت.zip">Download</a></div>
+        </div>
 
-    <div class="cards"></div>
-    <div class="caard">
-        <div class="img"><img src="eslam.jpg" alt=""></div>
-        <div class="content"><p class="namein">اسلام صبحي</p></div>
-        <div class="btn"><a download="" target="_blank" href="eslam.zip">Dwnload</a></div>
-    </div>
+        <div class="caard">
+            <div class="img"><img src="عبد الباسط.jpg" alt=""></div>
+            <div class="content"><p class="namein">عبد الباسط</p></div>
+            <div class="btn"><a download="" target="_blank" href="عبد الباسط.zip">Download</a></div>
+        </div>
 
+        <div class="caard">
+            <div class="img"><img src="خالد القحطاني.jpg" alt="خالد المعيقلي"></div>
+            <div class="content"><p class="namein">خالد المعيقلي</p></div>
+            <div class="btn"><a download="" target="_blank" href="خالد القحطاني.zip">Download</a></div>
+        </div>
 
+        <div class="caard">
+            <div class="img"><img src="ماهر المعيقلي.jpeg" alt="ماهر المعيقلي"></div>
+            <div class="content"><p class="namein">ماهر المعيقلي</p></div>
+            <div class="btn"><a download="" target="_blank" href="ماهر المعيقلي.zip">Download</a></div>
+        </div>
+        
 
-    <div class="caard">
-        <div class="img"><img src="abdelrhman.jpg" alt=""></div>
-        <div class="content"><p class="namein">عبدالرحمن مسعد</p></div>
-        <div class="btn"><a  download="" target="_blank" href="abdelrhman.zip">Dwnload</a></div>
-    </div>
+        <div class="caard">
+            <div class="img"><img src="مشاري راشد العفيسي.jpg" alt="مشاري راشد العفيسي"></div>
+            <div class="content"><p class="namein">مشاري راشد العفيسي</p></div>
+            <div class="btn"><a download="" target="_blank" href="مشاري راشد العفيسي.zip">Download</a></div>
+        </div>
 
+        <div class="caard">
+            <div class="img"><img src="محمد هشام حسن.jpeg" alt="محمد هشام حسن"></div>
+            <div class="content"><p class="namein">محمد هشام حسن</p></div>
+            <div class="btn"><a download="" target="_blank" href="محمد هشام حسن.zip">Download</a></div>
+        </div>
 
+        <div class="caard">
+            <div class="img"><img src="عبدالله كامل.jpg" alt="عبدالله كامل"></div>
+            <div class="content"><p class="namein">عبدالله كامل</p></div>
+            <div class="btn"><a download="" target="_blank" href="عبدالله كامل.zip">Download</a></div>
+        </div>
+<!--
+        <div class="caard">
+            <div class="img"><img src="ماهر المعيقلي.jpeg" alt="ماهر المعيقلي"></div>
+            <div class="content"><p class="namein">ماهر المعيقلي</p></div>
+            <div class="btn"><a download="" target="_blank" href="ماهر المعيقلي.zip">Download</a></div>
+        </div>
 
-    <div class="caard">
-        <div class="img"><img src="الحصري.jpg" alt=""></div>
-        <div class="content"><p class="namein">محمود خليل الحصري</p></div>
-        <div class="btn"><a  download="" target="_blank" href="محمد رفعت.zip">Dwnload</a></div>
-    </div>
+        <div class="caard">
+            <div class="img"><img src="ماهر المعيقلي.jpeg" alt="ماهر المعيقلي"></div>
+            <div class="content"><p class="namein">ماهر المعيقلي</p></div>
+            <div class="btn"><a download="" target="_blank" href="ماهر المعيقلي.zip">Download</a></div>
+        </div>
 
+        <div class="caard">
+            <div class="img"><img src="ماهر المعيقلي.jpeg" alt="ماهر المعيقلي"></div>
+            <div class="content"><p class="namein">ماهر المعيقلي</p></div>
+            <div class="btn"><a download="" target="_blank" href="ماهر المعيقلي.zip">Download</a></div>
+        </div>
 
+        <div class="caard">
+            <div class="img"><img src="ماهر المعيقلي.jpeg" alt="ماهر المعيقلي"></div>
+            <div class="content"><p class="namein">ماهر المعيقلي</p></div>
+            <div class="btn"><a download="" target="_blank" href="ماهر المعيقلي.zip">Download</a></div>
+        </div>
 
+        <div class="caard">
+            <div class="img"><img src="ماهر المعيقلي.jpeg" alt="ماهر المعيقلي"></div>
+            <div class="content"><p class="namein">ماهر المعيقلي</p></div>
+            <div class="btn"><a download="" target="_blank" href="ماهر المعيقلي.zip">Download</a></div>
+        </div>
 
+        <div class="caard">
+            <div class="img"><img src="ماهر المعيقلي.jpeg" alt="ماهر المعيقلي"></div>
+            <div class="content"><p class="namein">ماهر المعيقلي</p></div>
+            <div class="btn"><a download="" target="_blank" href="ماهر المعيقلي.zip">Download</a></div>
+        </div>
 
-    <div class="caard">
-        <div class="img"><img src="محمد رفعت.jpg" alt=""></div>
-        <div class="content"><p class="namein">محمد رفعت</p></div>
-        <div class="btn"><a  download="" target="_blank" href="محمد رفعت.zip">Dwnload</a></div>
-    </div>
+        <div class="caard">
+            <div class="img"><img src="ماهر المعيقلي.jpeg" alt="ماهر المعيقلي"></div>
+            <div class="content"><p class="namein">ماهر المعيقلي</p></div>
+            <div class="btn"><a download="" target="_blank" href="ماهر المعيقلي.zip">Download</a></div>
+        </div>
 
+        <div class="caard">
+            <div class="img"><img src="ماهر المعيقلي.jpeg" alt="ماهر المعيقلي"></div>
+            <div class="content"><p class="namein">ماهر المعيقلي</p></div>
+            <div class="btn"><a download="" target="_blank" href="ماهر المعيقلي.zip">Download</a></div>
+        </div>
 
+        <div class="caard">
+            <div class="img"><img src="ماهر المعيقلي.jpeg" alt="ماهر المعيقلي"></div>
+            <div class="content"><p class="namein">ماهر المعيقلي</p></div>
+            <div class="btn"><a download="" target="_blank" href="ماهر المعيقلي.zip">Download</a></div>
+        </div>
 
-    <div class="caard">
-        <div class="img"><img src="عبد الباسط.jpg" alt=""></div>
-        <div class="content"><p class="namein">عبد الباسط</p></div>
-        <div class="btn"><a  download="" target="_blank" href="عبد الباسط.zip">Dwnload</a></div>
-    </div>
+        <div class="caard">
+            <div class="img"><img src="ماهر المعيقلي.jpeg" alt="ماهر المعيقلي"></div>
+            <div class="content"><p class="namein">ماهر المعيقلي</p></div>
+            <div class="btn"><a download="" target="_blank" href="ماهر المعيقلي.zip">Download</a></div>
+        </div>
 
+        <div class="caard">
+            <div class="img"><img src="ماهر المعيقلي.jpeg" alt="ماهر المعيقلي"></div>
+            <div class="content"><p class="namein">ماهر المعيقلي</p></div>
+            <div class="btn"><a download="" target="_blank" href="ماهر المعيقلي.zip">Download</a></div>
+        </div>
 
-    <div class="caard">
-        <div class="img"><img src="ماهر المعيقلي.jpeg" alt=""></div>
-        <div class="content"><p class="namein">ماهر المعيقلي</p></div>
-        <div class="btn"><a  download="" target="_blank" href="ماهر المعيقلي.zip">Dwnload</a></div>
-    </div>
+        <div class="caard">
+            <div class="img"><img src="ماهر المعيقلي.jpeg" alt="ماهر المعيقلي"></div>
+            <div class="content"><p class="namein">ماهر المعيقلي</p></div>
+            <div class="btn"><a download="" target="_blank" href="ماهر المعيقلي.zip">Download</a></div>
+        </div>
 
+        <div class="caard">
+            <div class="img"><img src="ماهر المعيقلي.jpeg" alt="ماهر المعيقلي"></div>
+            <div class="content"><p class="namein">ماهر المعيقلي</p></div>
+            <div class="btn"><a download="" target="_blank" href="ماهر المعيقلي.zip">Download</a></div>
+        </div>
 
+        <div class="caard">
+            <div class="img"><img src="ماهر المعيقلي.jpeg" alt="ماهر المعيقلي"></div>
+            <div class="content"><p class="namein">ماهر المعيقلي</p></div>
+            <div class="btn"><a download="" target="_blank" href="ماهر المعيقلي.zip">Download</a></div>
+        </div>
 
-</section>
+        <div class="caard">
+            <div class="img"><img src="ماهر المعيقلي.jpeg" alt="ماهر المعيقلي"></div>
+            <div class="content"><p class="namein">ماهر المعيقلي</p></div>
+            <div class="btn"><a download="" target="_blank" href="ماهر المعيقلي.zip">Download</a></div>
+        </div>
 
+        <div class="caard">
+            <div class="img"><img src="ماهر المعيقلي.jpeg" alt="ماهر المعيقلي"></div>
+            <div class="content"><p class="namein">ماهر المعيقلي</p></div>
+            <div class="btn"><a download="" target="_blank" href="ماهر المعيقلي.zip">Download</a></div>
+        </div>
 
+        <div class="caard">
+            <div class="img"><img src="ماهر المعيقلي.jpeg" alt="ماهر المعيقلي"></div>
+            <div class="content"><p class="namein">ماهر المعيقلي</p></div>
+            <div class="btn"><a download="" target="_blank" href="ماهر المعيقلي.zip">Download</a></div>
+        </div>
 
-<br>
+        <div class="caard">
+            <div class="img"><img src="ماهر المعيقلي.jpeg" alt="ماهر المعيقلي"></div>
+            <div class="content"><p class="namein">ماهر المعيقلي</p></div>
+            <div class="btn"><a download="" target="_blank" href="ماهر المعيقلي.zip">Download</a></div>
+        </div>
 
+        <div class="caard">
+            <div class="img"><img src="ماهر المعيقلي.jpeg" alt="ماهر المعيقلي"></div>
+            <div class="content"><p class="namein">ماهر المعيقلي</p></div>
+            <div class="btn"><a download="" target="_blank" href="ماهر المعيقلي.zip">Download</a></div>
+        </div>
 
+        <div class="caard">
+            <div class="img"><img src="ماهر المعيقلي.jpeg" alt="ماهر المعيقلي"></div>
+            <div class="content"><p class="namein">ماهر المعيقلي</p></div>
+            <div class="btn"><a download="" target="_blank" href="ماهر المعيقلي.zip">Download</a></div>
+        </div>
+-->
+    </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+<script src="quran.js">  </script>
 </body>
 </html>
