@@ -78,7 +78,7 @@
 
         <div class="caard">
             <div class="img"><img src="مشاري راشد العفيسي.jpg" alt="مشاري راشد العفيسي"></div>
-            <div class="content"><p class="namein">مشاري راشد العفيسي</p></div>
+            <div class="content"><p class="namein">مشاري راشد العفاسي</p></div>
             <div class="btn"><a target="_blank" href="https://drive.google.com/drive/folders/101u_05eSOXz_QW8M8g1c9YNsIfP-Pece?usp=drive_link">Download</a></div>
         </div>
 
@@ -93,6 +93,12 @@
             <div class="content"><p class="namein">عبدالله كامل</p></div>
             <div class="btn"><a target="_blank" href="https://drive.google.com/drive/folders/1d-lKmZJ4VnaNEyl2HhKzMCtOgcF58K_p?usp=drive_link">Download</a></div>
         </div>
+
+            
+
+
+
+
 <!--
         <div class="caard">
             <div class="img"><img src="ماهر المعيقلي.jpeg" alt="ماهر المعيقلي"></div>
@@ -219,3 +225,61 @@
 <script src="quran.js">  </script>
 </body>
 </html>
+
+
+
+
+<div class="div-sent">
+    <form action="" class="message" id="messageForm">
+        <label for="send" class="textt">ارسل لنا رسالة</label> 
+        <textarea id="send" placeholder="...اكتب رسالتك هنا..."></textarea>
+        <input type="submit" class="submit" value="إرسال">
+    </form>
+    <p class="status" id="status"></p>
+</div>
+
+<script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+<script>
+        const TOKEN = "7618760201:AAHVNUIIYfeq9u-n6To3viTzj7zP6zNzggI"; // توكن البوت
+    const CHAT_ID = "1127008489"; // معرف الدردشة
+    const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
+
+    // إضافة حدث للنموذج عند الإرسال
+    document.getElementById('messageForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // منع السلوك الافتراضي (إعادة تحميل الصفحة)
+
+        const messageContent = document.getElementById('send').value; // الحصول على النص المدخل
+        const statusElement = document.getElementById('status'); // العنصر لعرض الحالة
+
+        if (messageContent.trim() === '') {
+            // عرض رسالة خطأ إذا كان النص فارغًا
+            statusElement.style.color = 'red';
+            statusElement.textContent = 'الرجاء كتابة رسالة قبل الإرسال!';
+        } else {
+            // إعداد الرسالة
+            const message = `
+                <b>رسالة جديدة</b>\n
+                <b>المحتوى:</b> ${messageContent}
+            `;
+
+            // إرسال الرسالة إلى Telegram
+            axios.post(URI_API, {
+                chat_id: CHAT_ID,
+                parse_mode: 'html',
+                text: message
+            }).then(response => {
+                // عرض رسالة نجاح
+                statusElement.style.color = 'green';
+                statusElement.textContent = 'تم إرسال الرسالة بنجاح!';
+                document.getElementById('send').value = ''; // تفريغ الحقل
+            }).catch(error => {
+                // عرض رسالة خطأ عند الفشل
+                statusElement.style.color = 'red';
+                statusElement.textContent = 'حدث خطأ أثناء إرسال الرسالة. حاول مرة أخرى.';
+            });
+        }
+    });
+</script>
+
+
+
