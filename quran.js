@@ -33,3 +33,41 @@
                 }
             });
         }
+
+
+
+
+
+
+
+
+//         // استدعاء العناصر
+// const toggleButton = document.getElementById('toggleMode');
+// const body = document.body;
+
+// // التحقق من التفضيل المحفوظ
+// const currentMode = localStorage.getItem('theme');
+// if (currentMode === 'dark') {
+//     body.classList.add('dark-mode');
+//     toggleButton.textContent = 'وضع الفاتح';
+//     toggleButton.classList.add('light-mode');
+// }
+
+// // تبديل الوضع عند الضغط على الزر
+// toggleButton.addEventListener('click', () => {
+//     body.classList.toggle('dark-mode');
+//     const isDarkMode = body.classList.contains('dark-mode');
+
+//     // تحديث النص والمظهر للزر
+//     if (isDarkMode) {
+//         toggleButton.textContent = 'وضع الفاتح';
+//         toggleButton.classList.add('light-mode');
+//         localStorage.setItem('theme', 'dark'); // حفظ التفضيل
+//     } else {
+//         toggleButton.textContent = 'وضع المظلم';
+//         toggleButton.classList.remove('light-mode');
+//         localStorage.setItem('theme', 'light'); // حفظ التفضيل
+//     }
+// });
+
+
