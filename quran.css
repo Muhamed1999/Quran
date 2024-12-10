@@ -196,3 +196,42 @@ img{
     transform: scale(1.1);
 }
 
+
+
+.div-sent{
+    display: flex;
+
+    justify-content: center;
+    margin: 15px;
+    color: #fff;
+}
+
+#send{
+    margin: 10px;
+    width:13rem ;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+.textt{
+    display: block;
+    text-align: center;
+    font-size: 30px;
+}
+.submit{
+    display: block;
+    width: 15rem;
+    padding: 10px;
+    color: #fff;
+    border: hidden;
+    transition: ease 0.5s;
+}
+
+
+.submit:hover{
+    transform: scale(1.4);
+    color: red;
+    
+}
